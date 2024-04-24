@@ -14,6 +14,7 @@ $(document).ready(function () {
   if ($(window).width() <= 500) {
     $("header a").click(function () {
       $(".menu-wrap").removeClass("menu-active");
+      $("body").removeClass("modal-open");
     });
   }
 
