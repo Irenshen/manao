@@ -10,6 +10,14 @@ $(document).ready(function () {
     $("body").removeClass("modal-open");
   });
 
+  //menu-mobile
+  if ($(window).width() <= 500) {
+    $("header a").click(function () {
+      console.log(1);
+      $(".menu-wrap").removeClass("menu-active");
+    });
+  }
+
   //header-active (background)
   !(function () {
     const e = document.querySelector(".header");
